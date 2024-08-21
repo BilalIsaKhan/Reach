@@ -18,17 +18,17 @@ const EditablePage: React.FC = () => {
 
   return (
     <>
-      <div className="relative bg-white p-[5.2rem] rounded-lg shadow-lg bg-[radial-gradient(circle,_#ddd_1px,_transparent_1px)] bg-[length:10px_10px] opacity-100">
+      <div className="relative bg-white p-8 md:p-[5.2rem] rounded-lg shadow-lg bg-[radial-gradient(circle,_#ddd_1px,_transparent_1px)] bg-[length:10px_10px] opacity-100">
         <div className="relative z-10 grid">
           <EditableText
             text={heading}
             onSave={setHeading}
-            className="text-[56px] mb-4 text-blue-600 font-times"
+            className="text-[32px] md:text-[56px] mb-4 text-blue-600 font-times"
           />
           <EditableText
             text={paragraph1}
             onSave={setParagraph1}
-            className="text-lg mb-4 text-gray-500"
+            className="text-md md:text-lg mb-4 text-gray-500"
           />
           <EditableImage
             src={Image}
