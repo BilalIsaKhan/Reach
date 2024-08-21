@@ -26,7 +26,7 @@ const EditableText: React.FC<EditableTextProps> = ({
       onChange={(e) => setValue(e.target.value)}
       onBlur={handleSave}
       autoFocus
-      className={`border-b-2 ${className}`}
+      className={`border-b-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:bg-blue-600 focus:text-white ${className}`}
     />
   ) : (
     <div

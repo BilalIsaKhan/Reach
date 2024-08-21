@@ -14,7 +14,7 @@ const EditablePage: React.FC = () => {
   const [paragraph2, setParagraph2] = useState(
     `A critical aspect of this engagement is recognizing that members should be viewed as partners in the governance process. Stephen Bowman emphasized this during the webinar, noting, "You are guaranteed to upset your members if you tell them, ‘Here are the changes that we, the board, want—just say yes.’ They won’t do it; so you need to take them through a process." This quote underscores the importance of involving members early in the discussion, seeking their input, and ensuring that they feel heard. By doing so, organizations can navigate the delicate process of constitutional change with greater ease and success, ultimately strengthening their governance structures.`
   );
-  const [imageSrc, setImageSrc] = useState(Image);
+  // const [imageSrc, setImageSrc] = useState(Image);
 
   return (
     <>
@@ -31,10 +31,10 @@ const EditablePage: React.FC = () => {
             className="text-lg mb-4 text-gray-500"
           />
           <EditableImage
-            src={imageSrc}
+            src={Image}
             alt="Editable Content"
-            onImageChange={setImageSrc}
-            className="my-4 text-gray-500"
+            // onImageChange={setImageSrc}
+            className="my-4 text-gray-500 w-full"
           />
           <EditableText
             text={paragraph2}
